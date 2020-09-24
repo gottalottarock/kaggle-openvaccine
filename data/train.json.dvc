@@ -1,0 +1,3 @@
+outs:
+- md5: 592997b4552333eef62c858948f7c9b7
+  path: train.json
