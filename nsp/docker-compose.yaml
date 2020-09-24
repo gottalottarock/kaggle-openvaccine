@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+    nsp:
+#        env_file: .env
+        build:
+            context: .
+        image: nsp
+        environment:
+            - NSP=/nsp-lib
+            - DATA_FILE=/input/train.json
+        volumes:
+            - ../nsp-lib:/nsp-lib
+            - ../nsp-result:/result
+            - ../data:/input
+        working_dir: /result
