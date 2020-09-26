@@ -24,5 +24,6 @@ if __name__ == '__main__':
         for line in f:
             if len(line.strip()):
                 records.append(json.loads(line))
+    records = records[:234]
     with Pool(NUM_PROCESSES) as pool:
         print(pool.map(run_nsp_on, records))
