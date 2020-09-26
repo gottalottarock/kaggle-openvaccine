@@ -9,8 +9,9 @@ services:
         environment:
             - NSP=/nsp-lib
             - DATA_FILE=/input/train.json
+            - NUM_PROCESSES=32
         volumes:
             - ../nsp-lib:/nsp-lib
-            - ../nsp-result:/result
+            - ../nsp-result_ya_2:/result
             - ../data:/input
         working_dir: /result
