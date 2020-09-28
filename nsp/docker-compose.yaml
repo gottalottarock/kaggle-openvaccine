@@ -9,9 +9,11 @@ services:
         environment:
             - NSP=/nsp-lib
             - DATA_FILE=/input/train.json
-            - NUM_PROCESSES=32
+            - INIT_DIR=/input_pdb
+            - NUM_PROCESSES=3
         volumes:
             - ../nsp-lib:/nsp-lib
-            - ../nsp-result_ya_2:/result
+            - ../nsp-optim:/result
             - ../data:/input
+            - ../nsp_result_full:/input_pdb
         working_dir: /result
