@@ -1,0 +1,3 @@
+outs:
+- md5: 61937d526a9878373dc483906c86ec6f
+  path: test_public.json
