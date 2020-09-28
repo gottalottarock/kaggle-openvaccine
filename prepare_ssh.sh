@@ -1,0 +1,1 @@
+ssh-keygen -t rsa -b 4096 -C "stepan.v.kuznetsov@phystech.edu"; eval "$(ssh-agent -s)"; ssh-add ~/.ssh/id_rsa; cat ~/.ssh/id_rsa; echo "https://github.com/settings/keys"; git config --global user.email "stepan.v.kuznetsov@phystech.edu"; git config --global user.name "stepan"
