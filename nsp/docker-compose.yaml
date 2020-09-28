@@ -8,12 +8,12 @@ services:
         image: nsp
         environment:
             - NSP=/nsp-lib
-            - DATA_FILE=/input/train.json
+            - DATA_FILE=/input/train_tmp.json
             - INIT_DIR=/input_pdb
-            - NUM_PROCESSES=3
+            - NUM_PROCESSES=48
         volumes:
             - ../nsp-lib:/nsp-lib
-            - ../nsp-optim:/result
+            - ../nsp-optim_ya:/result
             - ../data:/input
-            - ../nsp_result_full:/input_pdb
+            - ../nsp-result_ya:/input_pdb
         working_dir: /result
