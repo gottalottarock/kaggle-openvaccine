@@ -1,0 +1,3 @@
+outs:
+- md5: 4b83114dfb152737e0ff4c3e273e0e47
+  path: sampled_structures.json
