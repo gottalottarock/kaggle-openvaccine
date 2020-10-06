@@ -3,3 +3,7 @@
 /nsp_distances_angles.tar.gz
 /test_public.json
 /rec_to_optim.json
+/train_cv_splits.json
+/contrafold_structures.json
+/contrafold_bpp
+/cg_graphs

@@ -1,6 +1,6 @@
+[core]
+    remote = drive
 ['remote "drive"']
     url = gdrive://root/dvcstore
     gdrive_client_id = 602953571283-8q9uvcn7g426dts02v9rur9ivun8cild.apps.googleusercontent.com
     gdrive_client_secret = U9BwAevXiCpBwOlFRzaymG-m
-['remote "gdrive"']
-    url = ../gdrive:/root/dvcstore
